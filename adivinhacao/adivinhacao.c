@@ -10,10 +10,9 @@ int main()
 	int numerosecreto = 42;
 
 	int chute;
-	int ganhou = 0;
 	int tentativas = 1;
 
-	while(ganhou == 0){
+	while(1){
 
 		printf("Tentativa %d\n", tentativas);
 
@@ -33,7 +32,7 @@ int main()
 			printf("Parabéns! Você acertou!\n");
 			printf("Jogue de novo, você é um bom jogador!\n");
 
-			ganhou = 1;
+			break;
 		}
 		else if (maior){
 			printf("Seu chute foi maior que o número secreto\n");
@@ -44,5 +43,5 @@ int main()
 		tentativas++;
 	}
 	printf("Fim de jogo!\n");
-	printf("Você acertou em %d tentativas", tentativas-1);		
+	printf("Você acertou em %d tentativas\n", tentativas-1);		
 }
